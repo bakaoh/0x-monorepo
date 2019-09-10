@@ -24,6 +24,7 @@ export enum NetworkId {
     Rinkeby = 4,
     Kovan = 42,
     Ganache = 50,
+    Matic = 8995,
 }
 
 const NULL_ADDRESS = '0x0000000000000000000000000000000000000000';
@@ -114,6 +115,23 @@ const networkToAddresses: { [networkId: number]: ContractAddresses } = {
         multiAssetProxy: '0xcfc18cec799fbd1793b5c43e773c98d4d61cc2db',
         staticCallProxy: '0x6dfff22588be9b3ef8cf0ad6dc9b84796f9fb45f',
         devUtils: '0x38ef19fdf8e8415f18c307ed71967e19aac28ba1',
+    },
+    8995: {
+        exchange: '0xd30d3d36daa6da31d481c19eaccd94558c1aa594',
+        erc20Proxy: '0x0a53e142138c0d68f5cf968cc74c6f633df57f6b',
+        erc721Proxy: '0x8fb632da59e73450e097847c0c75608f79770182',
+        erc1155Proxy: '0xcc270ac66fdde50ea78c6e6a4a334739a2e3f59d',
+        forwarder: '0x51eb0db2c4a7bcfe18f83f3bdbfaec604056cb03',
+        orderValidator: '0x0a999c924736b8ec96f01fc959365ebd999a8dab',
+        zrxToken: '0xb1b57aca0977fdc772bda3ee292b189f363bcea0',
+        etherToken: '0xbf4263c8842b48c2f7cb1ceb237ae0207952edab',
+        assetProxyOwner: '0x1f02042d523d9d8b5eafe6eb6d2945b1cf14dd2d',
+        dutchAuction: '0xc06123a6a87f9866cd74952d3436a78a37a3a46b',
+        coordinatorRegistry: '0x9ab4d2039e07d08178fac0964cf967f3bd2e25e7',
+        coordinator: '0xa100ac285e42e62b8d802428d715963f18932aab',
+        multiAssetProxy: '0x3cf1c836071578a1e900236abf9d2ef0c966c53a',
+        staticCallProxy: '0x66dafa927c0b36954b67508ad2ee065ac1715024',
+        devUtils: '0x944131374d60fbdc8d99a05cfd42bb23d33142d9',
     },
 };
 

@@ -197,7 +197,7 @@ export async function runMigrationsAsync(
     );
 
     // Multisigs
-    const accounts: string[] = await web3Wrapper.getAvailableAddressesAsync();
+    const accounts: string[] = ['0x56F65dCD821c660b4f3E833696747F5D8e3C537B', '0x685A01B16909eC890B548D9DFf6E7ABF4ec0A24e'];
     const owners = _.uniq([accounts[0], accounts[1], txDefaults.from]);
     const confirmationsRequired = new BigNumber(2);
     const secondsRequired = new BigNumber(0);
